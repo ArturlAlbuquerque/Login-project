@@ -56,13 +56,37 @@ main{
 
 .campo {
     background-color: #5f2c82;
+    border: 3px solid #5f2c82;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 7px;
     margin: 5px 0px;
 }
 
 .campo > label {
     display: none;
+}
+
+.campo > span {
+    font-size: 2em;    
+    color: white;
+    width: 40px;
+    padding: 5px;
+}
+
+.campo > input {
+    background-color: #94cfcd;
+    font-size: 1em;
+    width: calc(100% - 44.5px);
+    transform: translateY(-13px);
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+.campo > input:focus-within {
+    outline: none;
+    background-color: white;
 }
 
 form > input[type="submit"] {
