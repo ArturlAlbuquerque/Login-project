@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-    body {
-        background-image: linear-gradient(to top, #49a09d, #5f2c82);
-        
+    body, html {
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);           
+        background-attachment: fixed;
     }
 
     #login {
@@ -25,11 +25,16 @@
     #formulario > p{    
     font-size: 1.2em;
     }
+
+    .campo > input {
+        transform: translateY(-13px);
+    }
 }
 
 @media screen and (min-width: 992px)  {
-    body {
+    body, html {
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
+        background-attachment: fixed;
     }
 
     #login {
@@ -50,5 +55,9 @@
 
     #formulario > p{    
     font-size: 1.2em;
+    }
+
+    .campo > input {
+        transform: translateY(-13px);
     }
 }
